@@ -9,8 +9,8 @@ define (require, exports, module)->
   SuperView = MixinBackbone(Backbone.View)
 
   class ScrollerWidget extends SuperView
-    template: "#ScrollerWidget"
-    className: "scroller_widget"
+    template: "#ScrollerComponent"
+    className: "scroller_component"
 
     ui:
       scroller: ".scroller"
