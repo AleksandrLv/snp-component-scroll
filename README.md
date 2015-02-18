@@ -44,7 +44,7 @@ require.config
 
 # Usage 
 
-Add component region in view when You want install scroller
+Add component region in view when You want install scroller  
 **coffee**
 ```coffee
 define (require, exports, module)->
@@ -61,15 +61,15 @@ define (require, exports, module)->
         view: ScrollerComponent
 ```
 
-Add region selector to block You want to scroll
+Add region selector to block You want to scroll.  
 **jade**
 ```jade
 .scroller(data-view-scroller)
   p Large content block U need to scroll
 ```
 
-Set height for this block
-**sass**
+Set height for this block.  
+**sass**  
 ```sass
 .index_page
   .scroller
