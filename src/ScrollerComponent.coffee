@@ -3,8 +3,8 @@
 define (require, exports, module)->
   require "baron"
   _ = require "underscore"
-  backbone = require 'backbone'
-  MixinBackbone = require 'mixin-backbone'
+  Backbone = require "backbone"
+  MixinBackbone = require "backbone-mixin"
 
   SuperView = MixinBackbone(Backbone.View)
 
@@ -17,7 +17,7 @@ define (require, exports, module)->
       content: ".scroller_content"
 
     bindings:
-      '@ui.number': 'text: number'
+      "@ui.number": "text: number"
 
     initialize: (@opts)->
       @model = new Model
@@ -33,9 +33,9 @@ define (require, exports, module)->
 
     render: ->
       options = {
-        bar: '.scroller__bar'
-        track: '.scroller__track'
-        barOnCls: 'baron'
+        bar: ".scroller__bar"
+        track: ".scroller__track"
+        barOnCls: "baron"
       }
       @ui.scroller.baron _.extend(options, @opt.baron)
 
