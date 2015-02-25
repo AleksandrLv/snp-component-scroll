@@ -37,7 +37,7 @@ require.config
   paths:
   ...
   'baron': "#{VENDOR_PATH}/baron/baron"
-  'ScrollerComponent': "#{VENDOR_PATH}/snp-component-scroller/ScrollerComponent"
+  'ScrollerComponent': "#{VENDOR_PATH}/snp-component-scroller/dist/ScrollerComponent"
 
 ...
 ```
