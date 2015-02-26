@@ -20,7 +20,6 @@ define (require, exports, module)->
       "@ui.number": "text: number"
 
     initialize: (@opts)->
-      @model = new Model
 
     reloadTemplate: ->
       @$wrappedEl = @$el.children().detach()
@@ -37,6 +36,6 @@ define (require, exports, module)->
         track: ".scroller__track"
         barOnCls: "baron"
       }
-      @ui.scroller.baron _.extend(options, @opt.baron)
+      @ui.scroller.baron _.extend(options, @opts.baron)
 
 

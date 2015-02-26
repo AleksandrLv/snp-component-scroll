@@ -1,4 +1,4 @@
-/*! snp-component-scroll 0.0.3 */
+/*! snp-component-scroll 0.0.4 */
 var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
 
@@ -31,7 +31,6 @@ define(function(require, exports, module) {
 
     ScrollerWidget.prototype.initialize = function(opts) {
       this.opts = opts;
-      return this.model = new Model;
     };
 
     ScrollerWidget.prototype.reloadTemplate = function() {
@@ -51,7 +50,7 @@ define(function(require, exports, module) {
         track: ".scroller__track",
         barOnCls: "baron"
       };
-      return this.ui.scroller.baron(_.extend(options, this.opt.baron));
+      return this.ui.scroller.baron(_.extend(options, this.opts.baron));
     };
 
     return ScrollerWidget;
