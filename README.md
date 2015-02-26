@@ -37,7 +37,7 @@ require.config
   paths:
   ...
   'baron': "#{VENDOR_PATH}/baron/baron"
-  'ScrollerComponent': "#{VENDOR_PATH}/snp-component-scroller/dist/ScrollerComponent"
+  'ScrollerComponent': "#{VENDOR_PATH}/snp-component-scroll/dist/ScrollerComponent"
 
 ...
 ```
@@ -49,7 +49,7 @@ Add component region in view when You want install scroller
 ```coffee
 define (require, exports, module)->
   _Page = require "../_Page"
-  ScrollerComponent =  require "ScrollerComponent"
+  ScrollerComponent = require "ScrollerComponent"
 
   IndexPage = _Page.extend
     template:"#IndexPage"

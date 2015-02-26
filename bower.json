@@ -23,6 +23,7 @@
     "tests"
   ],
   "dependencies": {
-    "backbone-mixin": "~0.3.5"
+    "backbone-mixin": "~0.3.5",
+    "baron": "~0.7.10"
   }
 }
