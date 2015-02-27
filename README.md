@@ -44,7 +44,7 @@ require.config
 
 # Usage 
 
-Add component region in view when You want install scroller  
+Add component region in view, when You want install scroller  
 **coffee**
 ```coffee
 define (require, exports, module)->
