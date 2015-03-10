@@ -6,7 +6,7 @@ Usefull only with [generator-sp](https://github.com/snphq/generator-sp).
 
 Install it from bower.
 ```bash
-bower install snp-component-scroll
+bower install snp-component-scroll --save
 ```
 
 
@@ -44,7 +44,7 @@ require.config
 
 # Usage 
 
-Add component region in view when You want install scroller  
+Add component region into view, where You want install scroller  
 **coffee**
 ```coffee
 define (require, exports, module)->

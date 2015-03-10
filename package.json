@@ -1,8 +1,8 @@
 {
   "name": "snp-component-scroll",
-  "version": "0.0.0",
+  "version": "0.0.6",
   "description": "Scroll component view for generator-sp",
-  "main": "'gulp'",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
