@@ -6,7 +6,7 @@
   ],
   "repository": "git@github.com:snphq/snp-component-scroll.git",
   "description": "Scroll component view for generator-sp",
-  "main": "src/ScrollerWidget.coffee",
+  "main": "dist/ScrollerComponent.js",
   "keywords": [
     "generator-sp",
     "scroll",

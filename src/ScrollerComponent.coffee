@@ -29,6 +29,8 @@ define (require, exports, module)->
       super
       @ui.content.append @$wrappedEl
 
+    refresh: ->
+      @ui.scroller.trigger 'sizeChange'
 
     render: ->
       options = {
