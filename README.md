@@ -75,3 +75,9 @@ Set height for this block.
   .scroller
     height: 300px
 ```
+
+Use `refresh()` to refresh scroller manualy
+```coffee
+  onDataChange: ->
+    @r.scroller.refresh()
+```
