@@ -9,22 +9,6 @@ Install it from bower.
 bower install snp-component-scroll --save
 ```
 
-
-Add template reference in `index.jade`
-```jade
-  block content
-    include _layout
-    #templates
-      include _page
-      include _modal
-      include _widget
-      include _list
-      script#ScrollerComponent(type='text/template')
-        include  ../bower_components/snp-component-scroll/lib/ScrollerComponent
-
-```
-
-
 Add styles reference in `main.scss`
 ```scss
 @import "../bower_components/snp-component-scroll/lib/ScrollerComponent";

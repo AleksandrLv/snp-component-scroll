@@ -16,17 +16,15 @@ define(function(require, exports, module) {
       return ScrollerWidget.__super__.constructor.apply(this, arguments);
     }
 
-    ScrollerWidget.prototype.template = "#ScrollerComponent";
-
     ScrollerWidget.prototype.className = "scroller_component";
+
+    ScrollerWidget.prototype.templateFunc = function() {
+      return "<div class='scroller'>\n  <div class='scroller_content' data-js-content></div>\n  <div class='scroller__track'>\n    <div class='scroller__bar'></div>\n  </div>\n</div>";
+    };
 
     ScrollerWidget.prototype.ui = {
       scroller: ".scroller",
       content: ".scroller_content"
-    };
-
-    ScrollerWidget.prototype.bindings = {
-      "@ui.number": "text: number"
     };
 
     ScrollerWidget.prototype.initialize = function(opts) {

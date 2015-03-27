@@ -9,15 +9,21 @@ define (require, exports, module)->
   SuperView = MixinBackbone(Backbone.View)
 
   class ScrollerWidget extends SuperView
-    template: "#ScrollerComponent"
     className: "scroller_component"
+    templateFunc: ->
+      """
+      <div class='scroller'>
+        <div class='scroller_content' data-js-content></div>
+        <div class='scroller__track'>
+          <div class='scroller__bar'></div>
+        </div>
+      </div>
+      """
 
     ui:
       scroller: ".scroller"
       content: ".scroller_content"
 
-    bindings:
-      "@ui.number": "text: number"
 
     initialize: (@opts)->
 
