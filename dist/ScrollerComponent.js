@@ -45,6 +45,10 @@ define(function(require, exports, module) {
       return this.ui.scroller.trigger('sizeChange');
     };
 
+    ScrollerWidget.prototype.dispose = function() {
+      return this.ui.scroller.baron().dispose();
+    };
+
     ScrollerWidget.prototype.render = function() {
       var options;
       options = {
