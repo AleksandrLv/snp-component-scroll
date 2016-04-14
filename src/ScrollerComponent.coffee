@@ -38,6 +38,9 @@ define (require, exports, module)->
     refresh: ->
       @ui.scroller.trigger 'sizeChange'
 
+    dispose: ->
+      @ui.scroller.baron().dispose()
+
     render: ->
       options = {
         bar: ".scroller__bar"
